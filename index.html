@@ -20,8 +20,28 @@
             <li><a href="#">FEEDBACK</a></li>
         </ul>
         <label for="check" class="checkbtn">
-            <i class="bars"><img src="/icon/menu.png"></i>
+            <i class="bars"><img src="/images/menu.png"></i>
         </label>
     </nav>
+    <section>
+
+    </section>
 </body>
+<script>
+    "use strict"
+    let img = document.querySelector('img')
+    let ul = document.querySelector('ul')
+    let clicked = false;
+    function drop(e){
+        if(clicked === false){
+        clicked = true
+        ul.style.left = '0%'
+    }
+        else if(clicked === true){
+            clicked = false
+            ul.style.left = '-100%'
+        }
+    }
+    img.addEventListener('click', drop)
+</script>
 </html>
