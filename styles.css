@@ -1,0 +1,59 @@
+@font-face {
+    font-family:Kanit;
+    src: url(/Kanit/Kanit-SemiBold.ttf);
+}
+@font-face {
+    font-family: Lobster;
+    src: url(/Lobster/Lobster-Regular.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family:Kanit;
+}
+nav {
+    background: #3ef;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.logo{
+    padding: 40px;
+    font-style: oblique;
+    font-size: 55px;
+    color: rgb(37, 37, 141);
+    text-decoration: underline overline;
+}
+ul{
+    padding:0.5em;
+}
+ul li{
+    display: inline-block;
+    margin: 10px;
+}
+nav ul li a{
+    color: rgb(37, 37, 141);
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 10px;
+}
+a:active, a:hover {
+    background: #1b9bff;
+    transition: .5s;
+}
+.checkbox{
+    font-size: 30px;
+    color: #1b9bff;
+    float: right;
+}
+.bars img{
+    width: 40px;
+    margin: 8px;
+    display: none;
+}
